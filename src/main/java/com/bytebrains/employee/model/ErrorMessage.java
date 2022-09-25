@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 
 /**
  * User: Kalidas Daundkar
- * Description: This class is used to create error response &return http status code
+ * Description: This class is used to create error response & return http status code
  */
 public class ErrorMessage {
 
