@@ -20,13 +20,18 @@ public class EmployeeController {
     }
 
     @GetMapping
-    public List<Employee> getAllEmployee(){
+    public List<Employee> getAllEmployee() {
         return empService.getAllEmployee();
     }
 
     @GetMapping("/{id}")
-    public Employee getEmployee(@PathVariable String id){
+    public Employee getEmployee(@PathVariable String id) {
         return empService.getEmployee(id);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteEmployee(@PathVariable String id) {
+        return empService.deleteEmployee(id);
 
     }
 
