@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * User : Kalidas Daundkar
- * Description :
+ * Description : This interface is used to declare all method (get,create,delete)
  */
 
 public interface EmployeeService {
@@ -16,4 +16,6 @@ public interface EmployeeService {
     List<Employee> getAllEmployee();
 
     Employee getEmployee(String id);
+
+    String deleteEmployee(String id);
 }
